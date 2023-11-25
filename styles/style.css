@@ -58,7 +58,7 @@
 }
 
 .logo {
-  display: flex;  
+  display: flex;
   gap: 20px;
   cursor: default;
   flex-direction: column;
@@ -179,18 +179,18 @@
   flex-direction: column;
   gap: 25px;
   padding: 22px 25px 24px;
-  font-weight: var(--standart-wgth, 400);  
+  font-weight: var(--standart-wgth, 400);
   line-height: 1.167;
 }
 
-.card__text-block {  
+.card__text-block {
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 
 .paragraph:last-child {
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
 }
 
 .card__buttons {
@@ -350,7 +350,7 @@
   transition: color 1s ease;
 }
 
-.button__icon {  
+.button__icon {
   position: relative;
   z-index: 1;
   inline-size: 21px;
