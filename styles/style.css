@@ -50,7 +50,7 @@
   padding-block-start: clamp(7.5rem, 6.4712rem + 4.9231vw, 8.625rem);
   padding-block-end: 19px;
   color: var(--accent-color, #00CC14);
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
@@ -123,7 +123,8 @@
   display: block;
   margin-top: 2px;
   background-color: currentColor;
-  transition: transform .3s ease;
+  transform-origin: left center;
+  transition: transform .3s ease;  
   transform: scaleX(0);
   block-size: 2px;
 }
@@ -142,6 +143,8 @@
 .theme-menu__button:focus-visible {
   opacity: .6;
 }
+
+
 
 .content {
   display: flex;
@@ -200,6 +203,8 @@
 }
 
 .button {
+  border: none;
+  outline: none;
   background-color: var(--bg-color, #fff);
   cursor: pointer;
  }
@@ -228,16 +233,16 @@
 .card__icon-button .main-body {
   opacity: 0;
   fill: var(--accent-color, #000);
-  transition: opacity .3s .03s linear;
+  transition: fill .3s .03s linear;
 }
 
 .card__icon-button .main-body {
   transition: opacity .3s linear;
 }
 
-.card__icon-button .core {
+/*.card__icon-button .core {
   transition: opacity .3s .03s linear;
-}
+}*/
 
 .card__icon-button:hover .core,
 .card__icon-button:hover .main-body,
@@ -273,7 +278,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-visualisation .3s .3s ease-in;
+  animation: sparks-visualisation .3s .3s alternate ease-in;
 }
 
 .card__icon-button:hover .main-body {
@@ -304,14 +309,12 @@
   gap: 8px;
   margin: 50px auto 100px;
   border: 2px solid currentColor;
-  padding: 16px 17px 15px;
   overflow: hidden;
-  cursor: pointer;
-  inline-size: clamp(19.25rem, 18.6118rem + 2.723vw, 21.0625rem);
+  cursor: pointer;  
+  padding: 15px 20px;
 }
 
-.card__save-button::after,
-.card__like-button::after {
+.card__button::after {
   content: '';
   position: absolute;
   display: block;
@@ -323,6 +326,7 @@
   inline-size: 100%;
   block-size: 100%;
 }
+
 
 .card__like-button:hover::after,
 .card__save-button:hover::after {
@@ -357,15 +361,14 @@
   block-size: 21px;
 }
 
-.card__save-button:hover .button__icon,
-.card__save-button:hover .button__text,
-.card__like-button:hover .button__text {
+.card__button-color:hover {
   color: var(--bg-color, #fff);
 }
 
 @media (width <= 375px) {
   .card__save-button {
-    padding: 15px
+    /*padding: 15px*/
+    flex-direction: column;
   }
 
   .button__icon {
