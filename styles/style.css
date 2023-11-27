@@ -124,7 +124,7 @@
   margin-top: 2px;
   background-color: currentColor;
   transform-origin: left center;
-  transition: transform .3s ease;  
+  transition: transform .3s ease;
   transform: scaleX(0);
   block-size: 2px;
 }
@@ -310,7 +310,7 @@
   margin: 50px auto 100px;
   border: 2px solid currentColor;
   overflow: hidden;
-  cursor: pointer;  
+  cursor: pointer;
   padding: 15px 20px;
 }
 
