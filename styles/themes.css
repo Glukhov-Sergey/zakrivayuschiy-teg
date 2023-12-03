@@ -8,8 +8,7 @@
 .page.theme-dark {
     --bg-color: #000000;
     --accent-color: #00CC14;
-
-    --bg-image: url(../svg/pattern-dark.svg);
+    --new-accent-color: #00CC14;    
 
     --standart-wgth: var(--normal-dark-weight, 465);
     --bold-wgth: var(--bold-dark-weight, 785);
@@ -17,35 +16,47 @@
     --heart-contour-color: #00CC14;
     --heart-liked-color: red;
 
+    /* фон */
+    --bg-color-main: #000;
+    --bg-color-from: #007f0c;
+    --bg-color-to: #004306;
 
+    --t-bg-color: #000;
 
 }
 
 .page.theme-light {
     --bg-color: #ffffff;
     --accent-color: #000000;
-
-    --bg-image: url(../svg/pattern-light.svg);
+    --new-accent-color: #fff;    
 
     --standart-wgth: var(--normal-light-weight, 400);
     --bold-wgth: var(--bold-light-weight, 700);
-
     --heart-contour-color: #000;
+
+    --bg-color-main: #d3d3d3;
+    --bg-color-from: #e7e7e7;
+    --bg-color-to: #1a1a1a;
+
+    --t-bg-color: #fff;
 
 }
 
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #000000;
-        --accent-color: #00CC14;
-    
-        --bg-image: url(../svg/pattern-dark.svg);
-    
-        --standart-wgth: var(--normal-dark-weight, 465);
-        --bold-wgth: var(--bold-dark-weight, 785);
-    
-        --heart-contour-color: #00CC14;
-        --heart-liked-color: red;
+        --bg-color: #ffffff;
+        --accent-color: #000000;
+        --new-accent-color: #fff;    
+
+        --standart-wgth: var(--normal-light-weight, 400);
+        --bold-wgth: var(--bold-light-weight, 700);
+        --heart-contour-color: #000;
+
+        --bg-color-main: #d3d3d3;
+        --bg-color-from: #e7e7e7;
+        --bg-color-to: #1a1a1a;
+
+        --t-bg-color: #fff;
     }
   }
