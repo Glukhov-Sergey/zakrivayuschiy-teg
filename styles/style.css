@@ -159,7 +159,7 @@
     
   margin-block-start: 100px;
   
-  background-color: var(--bg-color, #ffffff);
+  
   inline-size: min(100%, 700px);
 
 
@@ -169,6 +169,7 @@
 .card {
   border: 2px solid currentColor;
   margin-block-end: 52px;
+  background-color: var(--bg-color, #ffffff);
 }
 
 .card:last-of-type {
@@ -243,6 +244,7 @@
   color: var(--new-accent-color);
   background-color: var(--t-bg-color);
   transition: box-shadow 0.3s, color 1s;
+  cursor: pointer;
 }
 
 .button::after {
@@ -286,6 +288,7 @@
   align-items: flex-start;
   padding-block: 26px;
   
+  
 }
 
 .card__icon-button {
@@ -294,6 +297,7 @@
   background-color: transparent;
   transition: border 0.3s;
   block-size: 38px;
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -333,19 +337,15 @@
 }
 
 
+.dialog[open] {
 
-.dialog {
-  position: fixed;
-  inset: 0;
   padding: 30px;
   background-color: var(--bg-color);
   color: var(--new-accent-color);
   font-family: var(--accent-font, fantasy);
   font-size: 14px;
   border: 2px solid var(--accent-color);
-}
 
-.dialog[open] {
   inline-size: clamp(21.313rem, 20.96rem + 1.5vw, 22.313rem);
 }
 
@@ -433,5 +433,31 @@
   .save__img {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .card__text-block {
+    padding: 0;
+  }
+
+  .card {
+    margin-block-end: 50px;
+  }
+
+  .card__title {
+    padding-inline: 10px;
+    line-height: 1.2;
+  }
+
+  .card__content {    
+    padding-block-start: 20px;
+  }
+
+  .card__like {
+    padding-block-start: 0;
+    padding-inline: 25px;
+  }
+
+  .card__image-label {
+    inset-inline-end: 11px;
   }
 }
