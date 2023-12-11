@@ -1,1 +1,48 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /* шрифты */
+    --main-font: Inter;
+    --accent-font: PressStart2P;
+
+
+    --font-size: 18px;
+
+    --normal-light-weight: 400;
+    --bold-light-weight: 700;
+
+    --normal-dark-weight: 465;
+    --bold-dark-weight: 785;
+
+    --wdth: 100;
+
+    --standart-wgth: 400;
+    --bold-wgth: 700;
+
+    --font-header-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+
+    /* цвета */
+
+    --bg-color: #ffffff;
+    --accent-color: #000000;
+    --new-accent-color: #fff;
+
+    --heart-contour-color: #000;
+    --heart-liked-color: red;
+
+    /* фон */
+    
+    --bg-color-main: #d3d3d3;
+    --bg-color-from: #e7e7e7;
+    --bg-color-to: #1a1a1a;
+    --t-bg-color: #fff;
+
+
+
+    
+}
+
+@media (width < 375px) {
+    :root {
+      --font-header-size: 2.8rem;
+    }
+  }
